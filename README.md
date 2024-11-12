@@ -67,9 +67,9 @@ Run the following command in the terminal:
 
 *Here’s what this command does:*
 
-`docker build`: Builds a Docker image from a Dockerfile.
-`-t my-nginx-app`: Tags the image with a name, my-nginx-app, making it easier to refer to later.
-`.`: Tells Docker to use the current directory as the build context (this is where Docker will look for the Dockerfile).
+- `docker build`: Builds a Docker image from a Dockerfile.
+- `-t my-nginx-app`: Tags the image with a name, my-nginx-app, making it easier to refer to later.
+- `.`: Tells Docker to use the current directory as the build context (this is where Docker will look for the Dockerfile).
 
 Docker will pull the Nginx image if you don't have it already and then build your custom image with the specified configuration.
 
@@ -84,6 +84,14 @@ Run the following command:
 `docker run -d -p 8080:80 my-nginx-app`
 
 ![](result.png)
+
+This command does a few things:
+
+- `docker run`: Creates and starts a new container.
+- `-d`: Runs the container in detached mode, so it runs in the background.
+- `-p 8080:80`: Maps port 8080 on your local machine to port 80 on the container (where Nginx is listening).
+- `my-nginx-app`: Specifies the image to use.
+
 
 
 
