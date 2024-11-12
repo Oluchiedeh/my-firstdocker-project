@@ -1,4 +1,4 @@
-# SIMPLE WEB SERVER WITH DOCKER.
+# NGINX WEB SERVER WITH DOCKER.
 
 Here's a straightforward guide on creating a Nginx web server with Docker. This is ideal for beginners looking to understand the basics of Docker and web servers.
 
@@ -71,6 +71,10 @@ Run the following command in the terminal:
 - `-t my-nginx-app`: Tags the image with a name, my-nginx-app, making it easier to refer to later.
 - `.`: Tells Docker to use the current directory as the build context (this is where Docker will look for the Dockerfile).
 
+  View the images with the below command:
+
+  `docker images`
+
 Docker will pull the Nginx image if you don't have it already and then build your custom image with the specified configuration.
 
 #
@@ -92,6 +96,44 @@ This command does a few things:
 - `-p 8080:80`: Maps port 8080 on your local machine to port 80 on the container (where Nginx is listening).
 - `my-nginx-app`: Specifies the image to use.
 
+#
+
+**Step 5: Test Your Web Server.**
+
+Now, open a web browser and go to `http://localhost:8080`. You should see the "Hello, Oluchukwu!" message from your index.html file. 
+
+**Congratulations—you’ve successfully set up a ngnix web server in Docker!**
+
+#
+
+**Step 6: Stopping the Container.**
+When you’re done, you can stop the container with the following command:
+
+`docker ps -a`  # Find the container ID if you need to
+
+`docker stop <container_id>`
+
+Remove the container with the below command:
+
+`docker rm <container_id>`
+
+Then, remove the image with the below command:
+
+`docker rmi <images id>`
+
+#
+
+**Wrapping Up.**
+
+You now have a nginx web server running in Docker! This setup is easy to expand for more complex web applications by:
+
+- Using different web servers or application stacks.
+- Incorporating dynamic content with languages like Python, Node.js, or PHP.
+- Adding volume mounting to manage files outside the container.
+- Containers offer a consistent, isolated environment, making development and deployment easier. Try experimenting with other configurations, and get comfortable with Docker’s 
+  potential in DevOps.
+
+#
 
 
 
