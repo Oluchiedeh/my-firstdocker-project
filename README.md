@@ -130,10 +130,13 @@ You now have a nginx web server running in Docker! This setup is easy to expand 
 - Using different web servers or application stacks.
 - Incorporating dynamic content with languages like Python, Node.js, or PHP.
 - Adding volume mounting to manage files outside the container.
-- Containers offer a consistent, isolated environment, making development and deployment easier. Try experimenting with other configurations, and get comfortable with Docker’s 
-  potential in DevOps.
+  
+*Containers offer a consistent, isolated environment, making development and deployment easier. Try experimenting with other configurations, and get comfortable with Docker’s 
+ potential in DevOps.*
 
 #
 
+**Final Thoughts:**
 
+Docker is a powerful tool for simplifying application deployment. By understanding how to containerize even the simplest applications, you're building a foundation that will help you in any DevOps or cloud-based role.
 
