@@ -12,7 +12,25 @@ If you’re venturing into DevOps, understanding Docker is essential. Docker let
 Prerequisites
 Before we start, make sure you have:
 
-Docker installed on your machine (check installation by running docker --version).
-Basic understanding of web servers (HTML/CSS is a plus).
+- Docker installed on your machine (check installation by running docker --version).
+- Basic understanding of web servers (HTML/CSS is a plus).
 
+#
+
+**Step 1: Write a Simple HTML File.**
+Let's create a simple webpage to serve as our content.
+
+**1. Create a directory for your project:**
+
+`mkdir docker-project-1`
+
+`cd docker-project-1`
+
+**2. Inside this directory, create an `index.html` file**
+
+`touch index.html`
+
+`nano index.html`
+
+![]()
 
