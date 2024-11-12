@@ -102,6 +102,8 @@ This command does a few things:
 
 Now, open a web browser and go to `http://localhost:8080`. You should see the "Hello, Oluchukwu!" message from your index.html file. 
 
+![](localhost.png)
+
 **Congratulations—you’ve successfully set up a ngnix web server in Docker!**
 
 #
